@@ -150,14 +150,14 @@ if st.button('Analizar Fragmento'):
         # Display results
         #label1 = 'Positivo' if score_1 > 0.5 else 'Negativo'
         label2 = 'Positivo' if score_2 > 0.5 else 'Negativo'
-        st.write('Resultado del Modelo 1 (BERT): ', label1)
-        st.write('Resultado del Modelo 1 (Score-Modelo): ', score_1)
+        #st.write('Resultado del Modelo 1 (BERT): ', label1)
+        #st.write('Resultado del Modelo 1 (Score-Modelo): ', score_1)
         st.write('Resultado del Modelo 2 (LSTM): ', label2)
         st.write('Resultado del Modelo 2 (Score-Modelo): ', score_2[0,0])
 
         # Plot and display comparison chart
-        comparison_chart = plot_comparison(score_1, score_2)
-        st.pyplot(comparison_chart)
+        #comparison_chart = plot_comparison(score_1, score_2)
+        #st.pyplot(comparison_chart)
     else:
         st.write('Por favor, introduce algún texto para analizar.')
 
